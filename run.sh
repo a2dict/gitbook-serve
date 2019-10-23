@@ -6,5 +6,5 @@
 # copy mdbook to workspace
 cp -rf /mdbook/* /work/
 chmod -R 755 /work/
-npm i
+gitbook install
 exec gitbook serve --port 8080 --no-watch --no-open --no-live

@@ -7,7 +7,8 @@ RUN npm i -g gitbook-cli && \
     gitbook --version
 
 COPY run.sh /run.sh
-RUN chmod +x /run.sh
+COPY build.sh /build.sh
+RUN chmod +x /run.sh /build.sh
 CMD [ "/run.sh" ]
 
 EXPOSE 8080
