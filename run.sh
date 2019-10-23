@@ -7,4 +7,4 @@
 cp -rf /mdbook/* /work/
 chmod -R 755 /work/
 npm i
-exec gitbook serve --port 8080 --no-watch --no-open
+exec gitbook serve --port 8080 --no-watch --no-open --no-live
